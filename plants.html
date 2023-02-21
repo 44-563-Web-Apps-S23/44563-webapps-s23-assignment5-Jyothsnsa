@@ -17,6 +17,26 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="plants.html">Interesting Plants</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#InsectNavbarContent"
+      aria-controls="InsectNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="PlantsNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="plants.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="basic.html">Basic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="advanced.html">Advanced</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <h1>Plants by Jyothsna Naredla</h1>
   <div class="container">
     <div class="row">
@@ -40,7 +60,7 @@
       equal to or greater than 768px) .col-lg- (large devices - screen width equal to or greater than 992px) .col-xl-
       (xlarge devices - screen width equal to or greater than 1200px)</p>
     <div class="container">
-      <img src="Neillia.jpg" class="img-fluid" alt="Neillia image" height=450 width=400>
+      <img src="Neillia.jpg" class="img-fluid" alt="Neillia image" height=250 width=400>
       <img src="Ageratum.jpg" class="img-fluid" alt="Ageratum image" height=200 width=400>
       <img src="Rosemary.jpg" class="img-fluid" alt="Rosemary image" height=450 width=400>
     </div>
@@ -61,45 +81,152 @@
           </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>N</td>
-                <td>Neillia</td>
-                <td>naltar peak</td>
-                <td>New Melones Lake</td>
-            </tr>
-            <tr>
-                <td>A</td>
-                <td>Ageratum</td>
-                <td>Aneto</td>
-                <td>Atlin</td>
-            </tr>
-            <tr>
-                <td>R</td>
-                <td>Rosemary</td>
-                <td>Ramon</td>
-                <td>Raag</td>
-            </tr>
-            <tr>
-                <td>E</td>
-                <td>Eastrn Redbud</td>
-                <td>Everest</td>
-                <td>Eemmeer</td>
-            </tr>
-            <tr>
-                <td>D</td>
-                <td>Daphne</td>
-                <td>diablo</td>
-                <td>Dal</td>
-            <tr>
-                <td>L</td>
-                <td>Lilac</td>
-                <td>lincoln</td>
-                <td>Lake Powell</td>
-              </tr>
-            </tr>
-          </tbody>
-        </thead>
+          <tr>
+            <td>N</td>
+            <td>Neillia</td>
+            <td>naltar peak</td>
+            <td>New Melones Lake</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>Ageratum</td>
+            <td>Aneto</td>
+            <td>Atlin</td>
+          </tr>
+          <tr>
+            <td>R</td>
+            <td>Rosemary</td>
+            <td>Ramon</td>
+            <td>Raag</td>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td>Eastrn Redbud</td>
+            <td>Everest</td>
+            <td>Eemmeer</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>Daphne</td>
+            <td>diablo</td>
+            <td>Dal</td>
+          <tr>
+            <td>L</td>
+            <td>Lilac</td>
+            <td>lincoln</td>
+            <td>Lake Powell</td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <label>BUTTONS :</label>
+    <div class="btn">
+      <button type="button" class="btn btn-outline-info">N</button>
+      <button type="button" class="btn btn-outline-info">A</button>
+      <button type="button" class="btn btn-outline-info">R</button>
+      <button type="button" class="btn btn-outline-info">E</button>
+      <button type="button" class="btn btn-outline-info">D</button>
+      <button type="button" class="btn btn-outline-info">L</button>
+    </div>
+    <br>
+    <label>BUTTON GROUPS:</label>
+    <div class="container btn-toolbar">
+      <div class="btn-group" role="group" aria-label="Imaged Insects">
+        <button type="button" class="btn btn-success">N</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">R</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Lettered Insects">
+        <button type="button" class="btn btn-warning">E</button>
+        <button type="button" class="btn btn-warning">D</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Remained Lettered Insects">
+        <button type="button" class="btn btn-danger">L</button>
+      </div>
+    </div>
+    </thead>
+  </div>
+  </div>
+  <div class="container">
+    <div class="dropdown">
+      <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" type="button">Menu</button>
+      <div class="dropdown-menu">
+        <a href="basic.html" class="dropdown-item ">Basic</a>
+        <a href="advanced.html" class="dropdown-item">Advanced</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form action="">
+      <div class="form-group">
+        <label for="PlantEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="PlantEmail" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="form-group">
+        <label for="PlantInput" class="form-label">Plant</label>
+        <input type="text" class="form-control" id="PlantInput" placeholder="Enter Your Plant">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="PlantCheck">
+        <label class="form-check-label" for="PlantCheck">Sign up for newsletter?</label>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md">
+      <div class="card" style="width: 19rem;">
+        <img src="Neillia.jpg" class="card-img-top" alt="Neillia">
+        <div class="card-body">
+          <h5 class="card-title">Neillia</h5>
+          <p class="card-text">
+            Neillia is a genus of the botanical family Rosaceae. They are deciduous shrubs or subshrubs. They produce
+            clusters of terminal or axillary flowers, and have dry dehiscent fruits.[
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Neillia" class="btn btn-primary">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card" style="width: 19rem;">
+        <img src="Ageratum.jpg" class="card-img-top" alt="Ageratum">
+        <div class="card-body">
+          <h5 class="card-title">Ageratum</h5>
+          <p class="card-text">
+            Ageratum (/əˈdʒɛrətəm/)[2] (whiteweed in the USA) is a genus of 40[3] to 60 tropical and warm temperate
+            flowering annuals and perennials from the family Asteraceae, tribe Eupatorieae. Most species are native to
+            Central America and Mexico but four are native to the United States.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Ageratum" class="btn btn-primary">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card" style="width: 19rem;">
+        <img src="Rosemary.jpg" class="card-img-top" alt="Rosemary">
+        <div class="card-body">
+          <h5 class="card-title">Rosemary</h5>
+          <p class="card-text">
+            Rosemary is an aromatic evergreen shrub with leaves similar to hemlock needles. It is native to the
+            Mediterranean and Asia, but is reasonably hardy in cool climates. Special cultivars like 'Arp' can withstand
+            winter temperatures down to about −20 °C (−4 °F)
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Rosemary" class="btn btn-primary">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
 </body>
